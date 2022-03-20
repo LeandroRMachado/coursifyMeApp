@@ -21,5 +21,4 @@ export function SeeMore ({title}: Props) {
         <Entypo style={styles.arrow} name="arrow-long-right" size={20} color="black" />
     </View>
   )
-  
 }
