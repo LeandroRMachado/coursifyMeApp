@@ -15,7 +15,7 @@ export function OrderList () {
           activeOpacity={0.5}
         >
           <Text style={styles.subTitle} >A-Z</Text>
-          <Entypo name="chevron-down" size={24} color="gray" />
+          <Entypo name="chevron-down" size={24} color="gray"/>
         </TouchableOpacity>
       </View>
     </View>

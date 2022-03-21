@@ -1,5 +1,6 @@
 import React from "react";
 import { View } from "react-native";
+import { CardFlatList } from "../../components/CardFlatList";
 
 import { Header } from "../../components/Header";
 import { OrderList } from "../../components/OrderLIst";
@@ -12,6 +13,7 @@ export function Home () {
      <Header />
      <OrderList />
      <SeeMore title="CURSOS ONLINE"/>
+     <CardFlatList />
     </View>
   )
 }
