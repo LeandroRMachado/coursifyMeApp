@@ -1,5 +1,5 @@
 import React from "react";
-import { View } from "react-native";
+import { ScrollView, View } from "react-native";
 import { CardFlatList } from "../../components/CardFlatList";
 
 import { Header } from "../../components/Header";
@@ -9,11 +9,15 @@ import { styles } from "./styles";
 
 export function Home () {
   return (
-    <View style={styles.container}>
+    <ScrollView style={styles.container}>
      <Header />
      <OrderList />
      <SeeMore title="CURSOS ONLINE"/>
      <CardFlatList />
-    </View>
+     <SeeMore title="MARKETING DIGITAL"/>
+     <CardFlatList />
+     <SeeMore title="TUTORIAIS" />
+     <CardFlatList />
+    </ScrollView>
   )
 }

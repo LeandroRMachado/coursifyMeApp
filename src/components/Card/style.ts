@@ -8,7 +8,7 @@ export const styles = StyleSheet.create({
     flexDirection: 'column',
     maxWidth: 250,
     paddingRight: 30,
-    maxHeight: 350,
+    maxHeight: 410,
   },
   readMore: {
     fontSize: 16,
@@ -32,6 +32,6 @@ export const styles = StyleSheet.create({
     fontSize: 15,
     fontFamily: Fonts.Regular,
     color: Colors.GRAY_TERTIARY,
-    marginBottom: 15,
+    marginBottom: 30,
   }
 })
