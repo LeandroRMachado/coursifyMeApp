@@ -2,6 +2,7 @@ export const Colors = {
   WHITE: '#FFFFFF',
   LIGHTGREEN: '#3CC6AA',
   DARKGREEN: '#2AB598',
+  GREENFOOTER: '#1ABC9C',
   ORANGE: '#FDA506',
 
   BLACK_SECONDARY: '#121214',
