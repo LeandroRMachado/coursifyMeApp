@@ -1,5 +1,6 @@
 import React from "react";
 import { TouchableOpacity, Text, Image  } from "react-native";
+import { ListDivider } from "../LIstDivider";
 import { styles } from "./style";
 
 type Props = {
@@ -17,6 +18,7 @@ export function Card ({title, subTitle, imageUrl}: Props) {
         <Text style={styles.title}>{title}</Text>
         <Text style={styles.subTitle}>{subTitle}</Text>
        <Text style={styles.readMore}>Leia mais</Text>
+       <ListDivider />
      </TouchableOpacity>
   )
 }
