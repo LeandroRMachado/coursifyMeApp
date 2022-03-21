@@ -1,6 +1,7 @@
 import React from "react";
 import { Image, Text, TouchableOpacity, View } from "react-native";
 import { styles } from "./styles";
+import { Linking } from 'react-native';
 
 import LogoCoursifyPng from '../../assets/logo-coursify-w.png'
 
@@ -16,6 +17,9 @@ export function Footer ({title}: Props) {
       <TouchableOpacity
        style={styles.button}
        activeOpacity={0.7}
+       onPress={() => {
+        Linking.openURL('https://coursify.me/'); 
+       }}
       ><Text style={styles.textButton} >Quero conhecer a plataforma</Text>
       </TouchableOpacity>
     </View>

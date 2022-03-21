@@ -1,7 +1,7 @@
 import { StyleSheet } from "react-native";
 import { getStatusBarHeight } from 'react-native-iphone-x-helper'
 
-import { Colors, Fonts } from "../../theme";
+import { Colors } from "../../theme";
 
 export const styles = StyleSheet.create({
   container : {

@@ -9,6 +9,7 @@ export const styles = StyleSheet.create({
     maxWidth: 250,
     paddingRight: 30,
     maxHeight: 410,
+    marginRight: 20
   },
   readMore: {
     fontSize: 16,
@@ -33,5 +34,7 @@ export const styles = StyleSheet.create({
     fontFamily: Fonts.Regular,
     color: Colors.GRAY_TERTIARY,
     marginBottom: 30,
+    textAlign: 'left',
+    width: 230
   }
 })

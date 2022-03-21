@@ -14,11 +14,11 @@ export function Home () {
      <Header />
      <OrderList />
      <SeeMore title="CURSOS ONLINE"/>
-     <CardFlatList />
+     <CardFlatList isMarked/>
      <SeeMore title="MARKETING DIGITAL"/>
      <CardFlatList />
      <SeeMore title="TUTORIAIS" />
-     <CardFlatList />
+     <CardFlatList isMarked/>
      <Footer title="O Coursify.me é uma plataforma de ensino a distância,
       onde qualquer pessoa ou empresa pode construir seu EAD e vender cursos pela internet. " />
     </ScrollView>
