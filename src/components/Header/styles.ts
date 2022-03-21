@@ -21,6 +21,13 @@ export const styles = StyleSheet.create({
   button: {
     backgroundColor: Colors.LIGHTGREEN,
     borderRadius: 169/2,
-    marginRight: 17,  
+    marginRight: 17, 
+    marginTop: 4,
+    marginLeft: 70
+  },
+  arrow: {
+    marginLeft: 10,
+    marginRight: 17,
+    marginTop: 17
   }
 })

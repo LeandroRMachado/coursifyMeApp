@@ -20,6 +20,7 @@ export function CardFlatList ({isMarked = false}: Props) {
         title='Como criar uma landing page de alta ...'
         subTitle='uma landing page de alta conversão é o que todo mundo que vende online precisa para otimizar ...'
         imageUrl='https://blog.coursify.me/wp-content/uploads/2022/02/landing-page-de-alta-conversao-vendas-coursifyme.jpg'
+        isHighlight
       />
       <Card
         title='12 melhores aplicativos para gravar vídeo'

@@ -8,6 +8,7 @@ import AppLoading from 'expo-app-loading';
 
 import { StatusBarHeader } from './src/components/StatusBarHeader';
 import { Home } from './src/screens/Home';
+import { Page } from './src/screens/Page';
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -22,7 +23,7 @@ export default function App() {
   return (
     <>
       <StatusBarHeader />
-      <Home />
+      <Page />
     </>
   );
 }
