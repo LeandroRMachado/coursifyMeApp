@@ -16,7 +16,11 @@ export function Header ({arrowBack=false}: Props) {
     <>
     {arrowBack ? (
       <View style={styles.container} >
-        <AntDesign name="arrowleft" size={24} color="black" style={styles.arrow} />
+        <TouchableOpacity
+        activeOpacity={0.3}
+        >
+         <AntDesign name="arrowleft" size={24} color="black" style={styles.arrow} />
+        </TouchableOpacity>
         <Image source={LogoPng} style={styles.imageHeader}/>
         <TouchableOpacity
           style={styles.button}
