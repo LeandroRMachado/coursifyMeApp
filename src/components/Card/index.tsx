@@ -1,5 +1,6 @@
 import React from "react";
 import { TouchableOpacity, Text, Image  } from "react-native";
+import { useNavigation } from '@react-navigation/native';
 
 import { ListDivider } from "../LIstDivider";
 import { styles } from "./style";
@@ -11,13 +12,24 @@ type Props = {
   isHighlight?: boolean,
 }
 
+type Nav = {
+  navigate: (value: string) => void;
+}
+
 export function Card ({title, subTitle, imageUrl, isHighlight=false}: Props) { 
+
+  const { navigate } = useNavigation<Nav>()
+
+  function foo() {
+    navigate("Page")
+  }
 
   return (
     <>
     {isHighlight ? (
       <TouchableOpacity
        style={styles.container}
+       onPress={foo}
        activeOpacity={0.8}
       >
        <Image source ={{ uri : imageUrl }} style={styles.imageCard}/>

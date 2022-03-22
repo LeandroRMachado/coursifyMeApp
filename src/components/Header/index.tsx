@@ -1,6 +1,6 @@
 import React from 'react';
 import { Image, TouchableOpacity, View } from 'react-native';
-
+import { useNavigation } from '@react-navigation/native';
 import { styles } from './styles';
 
 import LogoPng from '../../assets/logo.png'
@@ -12,14 +12,26 @@ type Props = {
 }
 
 export function Header ({arrowBack=false}: Props) {
+  const navigation = useNavigation();
+
+  function handleGoBack(){
+    navigation.goBack();
+  }
+
   return (
     <>
     {arrowBack ? (
       <View style={styles.container} >
         <TouchableOpacity
+        onPress={handleGoBack}
         activeOpacity={0.3}
         >
-         <AntDesign name="arrowleft" size={24} color="black" style={styles.arrow} />
+         <AntDesign
+          name="arrowleft"
+          size={24}
+          color="black"
+          style={styles.arrow}
+          />
         </TouchableOpacity>
         <Image source={LogoPng} style={styles.imageHeader}/>
         <TouchableOpacity
