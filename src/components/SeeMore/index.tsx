@@ -1,24 +1,20 @@
 import React from "react";
-import { Text, TouchableOpacity, View } from "react-native";
+import { Text, TouchableOpacity } from "react-native";
 import { styles } from "./styles";
-
 import { Entypo } from '@expo/vector-icons'; 
 
-type Props = {
-  title: string
-}
-
-export function SeeMore ({title}: Props) {
+export function SeeMore () {
   return (
-   <View style={styles.container}>
-      <Text style={styles.title} >{title}</Text>
-
-        <TouchableOpacity
-          activeOpacity={0.7}
-        >
-          <Text style={styles.subTitle}>VER MAIS</Text>
-        </TouchableOpacity>
-        <Entypo style={styles.arrow} name="arrow-long-right" size={20} color="black" />
-    </View>
+    <TouchableOpacity
+      style={styles.container}
+      activeOpacity={0.5}
+    >
+      <Text style={styles.title}>VER MAIS</Text>
+      <Entypo 
+      name="arrow-long-right"
+      size={20} color="black"
+      style={styles.arrow} 
+      />
+    </TouchableOpacity>
   )
 }

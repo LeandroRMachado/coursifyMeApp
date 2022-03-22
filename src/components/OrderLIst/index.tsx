@@ -8,7 +8,6 @@ export function OrderList () {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>ORDENAR POR:</Text>
-
       <View>
         <TouchableOpacity
           style={styles.button}
